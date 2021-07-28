@@ -91,7 +91,6 @@ public class ScanUtils {
         File[] fs = file.listFiles();
         if (null != fs) {
             for (File f : fs) {
-//                print("file name : " + f.getName());
                 if (f.isDirectory() && !isIgnoreDir(f.getName())) {    //目录，递归
                     scan(f.getPath(), type);
                 }
