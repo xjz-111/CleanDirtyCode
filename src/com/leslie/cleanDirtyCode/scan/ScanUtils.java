@@ -66,11 +66,11 @@ public class ScanUtils {
         // 扫描代码
         scan(projectPath, Type.CODE);
 
-        // 扫描layout中的xml - 自定义View有可能只在xml中出现
-        scan(projectPath, Type.LAYOUT);
-
         // 扫描AndroidManifest.xml
         scan(projectPath, Type.MANIFEST);
+
+        // 扫描layout中的xml - 自定义View有可能只在xml中出现
+        scan(projectPath, Type.LAYOUT);
 
         writContent();
 
