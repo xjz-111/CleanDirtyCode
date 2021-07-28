@@ -36,6 +36,6 @@ public class CleanPlugin extends AnAction implements OnScanListener {
 
     @Override
     public void onErr(String msg) {
-//        Messages.showMessageDialog(project, msg, "Information", Messages.getInformationIcon());
+        Messages.showMessageDialog(project, msg, "Information", Messages.getInformationIcon());
     }
 }
