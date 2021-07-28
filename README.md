@@ -40,7 +40,7 @@
 
 3. 点击Refactor，第一个便为CleanDirtyCode，点击可开始清理。
 ```
-![image]()
+![image](https://github.com/xjz-111/CleanDirtyCode/blob/master/img/use.png)
 
 ##### 自行导出jar
 ```
@@ -48,6 +48,6 @@
 
 2. 点击Build -> Prepare Plugin Module 'CleanDirtyCode' For Deployment 生成jar，存于项目根目录下。
 ```
-![image]()
+![image](https://github.com/xjz-111/CleanDirtyCode/blob/master/img/export.png)
 
 
