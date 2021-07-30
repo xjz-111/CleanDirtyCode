@@ -1,9 +1,10 @@
 <idea-plugin>
   <id>CleanDirtyCode.CleanPlugin</id>
   <name>CleanDirtyCode</name>
-  <version>1.0</version>
-  <vendor email="mr_feeling_heart@yeah.net" url="https://github.com/xjz-111">Leslie</vendor>
+  <version>1.0.0</version>
+  <vendor email="mr_feeling_heart@yeah.net" url="https://github.com/xjz-111/CleanDirtyCode">Leslie</vendor>
 
+  <description>清除Android项目中无用的Java或kotlin代码的插件，最终被清除的类会被导出在/Temp_CleanDirtyCode/del.txt中。</description>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <idea-version since-build="173.0"/>

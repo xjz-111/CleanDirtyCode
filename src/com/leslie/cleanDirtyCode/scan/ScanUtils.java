@@ -204,7 +204,7 @@ public class ScanUtils {
 
     private void success() {
         if (null != onScanListener) {
-            onScanListener.onSuccess("CleanDirtyCode::Success");
+            onScanListener.onSuccess("CleanDirtyCode :: 清除成功");
         }
         delFile(CACHE_FILE_CODE);
         delFile(CACHE_FILE_LAYOUT);
