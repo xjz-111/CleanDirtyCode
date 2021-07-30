@@ -14,16 +14,17 @@
 * 对于类名特别简单的，如A.java或B.kt这种，无法清除；
 * 两个都未被使用的类循环调用时无法清除；
 * 对于在Manifest中注册的Activity、BroadcastReceiver、Service、ContentProvider等，无论实际使用与否，都保留未做删除；
-* 考虑使用反射时包名等的拼接，所以保险起见，在类中仅用SimpleName做了判断，可能会有误判保留。
+* 考虑使用反射时包名等的拼接，所以保险起见，在类中仅用SimpleName做了判断，可能会有误判保留；
+* 不支持引入库的扫描。
 #### 二. 实现原理
 ```
-1. 忽略根目录下的gradle、.gradle、libs、.idea、androidTest等四个文件夹中的内容；
+1. 忽略根目录下的gradle、.gradle、libs、.idea、androidTest四个文件夹中的内容；
 
-2. 扫描根Java或kotlin文件，得到Temp_CleanDirtyCode/codePath.txt；
+2. 扫描Java或kotlin文件，得到Temp_CleanDirtyCode/codePath.txt；
 
 3. 扫描AndroidManifest文件，得到Temp_CleanDirtyCode/manifestPath.txt；
 
-4. 扫描根xml文件，得到Temp_CleanDirtyCode/layoutPath.txt；
+4. 扫描xml文件，得到Temp_CleanDirtyCode/layoutPath.txt；
 
 5. 读取Temp_CleanDirtyCode/codePath.txt里面的每一行内容，分别在codePath.txt（除当前行）、manifestPath.txt、layoutPath.txt中判断是否又被使用；
 
