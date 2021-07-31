@@ -33,7 +33,7 @@
 
 7. 删除完成后仅保留Temp_CleanDirtyCode/del.txt。
 ```
-#### 二. 具体使用
+#### 三. 具体使用
 ##### 直接使用jar
 ```
 1. 下载 [CleanDirtyCode.jar](https://github.com/xjz-111/CleanDirtyCode/blob/master/CleanDirtyCode.jar)  ；
