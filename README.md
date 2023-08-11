@@ -36,7 +36,7 @@
 #### 三. 具体使用
 ##### 直接使用jar
 ```
-1. 下载 [CleanDirtyCode.jar](https://github.com/xjz-111/CleanDirtyCode/blob/master/CleanDirtyCode.jar)  ；
+1. [下载 CleanDirtyCode.jar](https://github.com/xjz-111/CleanDirtyCode/blob/master/CleanDirtyCode.jar)  ；
 
 2. 将下载的jar已插件形式安装在AndroidStudio中；
 
